@@ -17,13 +17,13 @@
 \faculty[fr]={Faculty of Sciences and Technology}
 \faculty[it]={Faculty of Sciences and Technology}
 
-% Scientific filed
+% Scientific field
 \IfSubStr{\novathesis@opt@docdegree}{phd}{%
     \majorfield[pt]={Informática}
     \majorfield[en]={Computer Science and Informatics}
   }{%
   \majorfield[pt]={Engenharia Informática}
-  \majorfield[en]={Computer Science and Informatics Engineering}
+  \majorfield[en]={Electrical and Computer Engineering}
   }
 \majorfield[fr]={Ingénierie Informatique}
 \majorfield[it]={Ingegneria Informatica}

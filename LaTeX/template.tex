@@ -38,8 +38,8 @@
   docdegree=msc,        % phd(*), phdplan, phdprop, msc, mscplan, bsc
   school=nova/fct,      % nova/fct(*), nova/fcsh, nova/ims, ul/ist, ul/fc
   lang=en,              % en(*), fr, it, pt
-  coverlang=pt,         % defaults to main language
-  copyrightlang=pt,     % defaults to main language
+  coverlang=en,         % defaults to main language
+  copyrightlang=en,     % defaults to main language
   fontstyle=kpfonts,    % baskervaldx bookman charter ebgaramond fbb fourier garamond
                         % heuristica kpfonts(*) libertine mathpazo1 mathpazo2 newcent
                         % newpx newtx 
@@ -86,7 +86,7 @@
     % showtrims,          % DEBUG
     a4paper,            % the paper size/format
     11pt,               % 10pt, 11pt(*), 12pt
-    final,              % draft, final  <= Replace 'draft' with 'final' in final version
+    draft,              % draft, final  <= Replace 'draft' with 'final' in final version
   },
   media=screen,         % screen(*), paper
           % behavior to be defined in school options based in "\novathesis@opt@media"
@@ -151,13 +151,13 @@
 % You may override here any of the values defined there
 % e.g.
 % \majorfield[pt]={Engenharia Biomédica}
-% \majorfield[en]={Biomedical Engineering}
+ \majorfield[en]={Electrical and Computer Engineering}
 % \thesiscover[msc,front]={cover-megi-nova-ims}
-% \thesiscover[msc,front]={cover-mgi-nova-ims}
+ %\thesiscover[msc,front]={cover-mgi-nova-ims}
 %%============================================================
 
 % Title of the dissertation/thesis
-% USe "\\" to break the title into two or more lines
+% Use "\\" to break the title into two or more lines
 % \let\oldtitle=\title
 % \makeatletter
 % \renewcommand{\title}[2][]{%
@@ -169,23 +169,23 @@
 % }
 % \makeatother
 
-\title[A Very Long and Impressive Thesis Title\\With a Line Break]{A Very Long and Impressive Thesis Title With a Line Break}
-\subtitle{Science is beautiful}
+\title[Sentiment Analysis \\ on Product-Service Systems]{Sentiment Analysis on Product-Service Systems}
+\subtitle{Diversity}
 
-% Autor
+% Author
 % use [f] for female and [m] for male
-\authorname[m]{John Longname Doe}{John Doe}
-\authordegree{Master of Science}
+\authorname[m]{Guilherme Nuno Campos Góis}{Guilherme Góis}
+\authordegree{Bachelor}
 
 % Date
-\datemonth{August}
+\datemonth{December}
 \dateyear{2017}
 
 
 % Advisers
-% use "\\&" if necessary to break the lines in the apprpriate place
+% use "\\&" if necessary to break the lines in the appropriate place
 % use [f] for female and [m] for male
-\adviser[f]{John Doe Adviser Name}{Full Professor}{\\& NOVA University of Lisbon} 
+\adviser[m]{Rui Alexandre Nunes Neves da Silva}{Full Professor}{\\& NOVA University of Lisbon} 
 % you may use "\newline" to force a new line
 % \adviser[m]{John Doe Male Adviser Name}{Associate\\& Professor}{Some University Somewhere}
 % \adviser[m]{John Doe Third Adviser Name}{Associate\\& Professor}{Some University Somewhere}
@@ -193,7 +193,7 @@
 
 % Co-Advisers (maximum of 9)
 % use [f] for female and [m] for male
-\coadviser[f]{John Doe Co-Adviser Name}{Associate\\& Professor}{NOVA University of Lisbon}
+%\coadviser[f]{John Doe Co-Adviser Name}{Associate\\& Professor}{NOVA University of Lisbon}
 % \coadviser[f]{[Nome da co-orientadora 2]}{[Profª.\ Auxiliar]}{[Universidade Nova de Lisboa]}
 
 
@@ -212,7 +212,7 @@
 \committee[m,f]{Yet another member of the committee}
 
 %%------------------------------------------------------------
-%% All the names inside braces below sould correspond to a file
+%% All the names inside braces below should correspond to a file
 %%     with extension ".tex" and located in the "Chapters" folder
 %%------------------------------------------------------------
 
@@ -228,7 +228,7 @@
 % \quotefile{quote}    % Quote
 \abstractfile[pt]{abstract-pt}  % Abstract in Portuguese
 \abstractfile[en]{abstract-en}  % Abstract in English
-\abstractfile[fr]{abstract-fr}  % Abstract in French
+%\abstractfile[fr]{abstract-fr}  % Abstract in French
 \glossaryfile{glossary}
 \setglossarystyle{super}
 \acronymsfile{acronyms}
@@ -247,14 +247,17 @@
 
 % Text chapters
 % syntax: \chapterfile{file}
-\chapterfile{chapter1}
-\chapterfile{chapter2}
-\chapterfile{chapter3}
-% \chapterfile{chapter4}
+\chapterfile{SotA}
+%\chapterfile{Exemplo3}
+%\chapterfile{Concept}
+%\chapterfile{Development}
+%\chapterfile{Validation}
+%\chapterfile{Conclusions}
+
 
 
 % Text appendixes
-% sintax: \appendixfile{file}
+% syntax: \appendixfile{file}
 % Comment if not needed
 % \appendixfile{appendix1}
 % \appendixfile{appendix2}
@@ -262,7 +265,7 @@
 % \annexfile{annex2}
 
 
-% BibTeX bibiography files. Can be used multiple times with a single file nae each time.
+% Bib TeX bibliography files. Can be used multiple times with a single file nae each time.
 \addbibfile{bibliography.bib}
 
 
@@ -271,7 +274,7 @@
 %%==== DANGER ==== DANGER ==== DANGER ==== DANGER ==== DANGER ====
 %%==== DANGER ==== DANGER ==== DANGER ==== DANGER ==== DANGER ====
 %%
-%%  END OF USER COSTUMIZAITON
+%%  END OF USER CUSTOMIZATION
 %% Please do not change below this point!!! :)
 %%
 %%==== DANGER ==== DANGER ==== DANGER ==== DANGER ==== DANGER ====
@@ -279,7 +282,7 @@
 %%==== DANGER ==== DANGER ==== DANGER ==== DANGER ==== DANGER ====
 
 
-%% Begining of document
+%% Beginning of document
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
